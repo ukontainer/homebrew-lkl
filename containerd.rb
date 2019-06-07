@@ -1,12 +1,12 @@
 require 'formula'
 
-HOMEBREW_CTRD_BRANCH='runu-darwin'
+HOMEBREW_CTRD_BRANCH='runu-darwin-master-190607'
 HOMEBREW_CTRD_VERSION='beta'
 class Containerd < Formula
-  homepage 'https://github.com/libos-nuse/containerd'
-  url 'https://github.com/libos-nuse/containerd.git', :branch => 'runu-darwin'
+  homepage 'https://github.com/ukontainer/containerd'
+  url 'https://github.com/ukontainer/containerd.git', :branch => HOMEBREW_CTRD_BRANCH
   version "#{HOMEBREW_CTRD_BRANCH}-#{HOMEBREW_CTRD_VERSION}"
-  head 'https://github.com/libos-nuse/containerd.git', :branch => 'runu-darwin'
+  head 'https://github.com/ukontainer/containerd.git', :branch => HOMEBREW_CTRD_BRANCH
 
   depends_on 'go' => :build
 

@@ -10,6 +10,7 @@ class DockerdDarwin < Formula
   head "https://github.com/ukontainer/dockerd-darwin.git", :branch => HOMEBREW_DOCKERD_BRANCH
   
   depends_on 'go' => :build
+  depends_on 'ukontainer/lkl/containerd'
 
   def install
       ENV['GOPATH'] = buildpath

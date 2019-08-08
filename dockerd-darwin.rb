@@ -17,6 +17,7 @@ class DockerdDarwin < Formula
     ln_sf buildpath, buildpath/"src/github.com/docker/docker"
     system "cd src/github.com/docker/docker && make -f Makefile.darwin"
     bin.install "src/github.com/docker/docker/bundles/dynbinary-daemon/dockerd"
+    bin.install "src/github.com/docker/docker/bundles/dynbinary-daemon/dockerd-dev"
   end
 
   test do

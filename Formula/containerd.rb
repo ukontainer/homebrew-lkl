@@ -19,6 +19,7 @@ class Containerd < Formula
   def install
     system "make"
     bin.install "bin/containerd"
+    bin.install "bin/containerd-shim"
     bin.install "bin/ctr"
   end
 

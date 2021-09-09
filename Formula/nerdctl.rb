@@ -1,23 +1,17 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 HOMEBREW_CTRD_REVISION="feature-darwin-build".freeze
 HOMEBREW_CTRD_VERSION="beta2".freeze
 
 class Nerdctl < Formula
   desc "Docker-compatible CLI for containerd for macOS"
   homepage "https://github.com/containerd/nerdctl"
-  url "https://github.com/ukontainer/nerdctl.git", :branch => HOMEBREW_CTRD_REVISION
-  version "#{HOMEBREW_CTRD_VERSION}"
-  sha256 ""
+  url "https://github.com/ukontainer/nerdctl.git", branch: HOMEBREW_CTRD_REVISION
+  version HOMEBREW_CTRD_VERSION
+  # sha256 ""
   license ""
 
   depends_on "go" => :build
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
-    # Remove unrecognized options if warned by configure
-    # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
     system "make"
     bin.install "_output/nerdctl"
   end

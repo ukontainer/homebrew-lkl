@@ -4,9 +4,9 @@ HOMEBREW_DOCKERD_VERSION="beta1".freeze
 class DockerdDarwin < Formula
   desc "Docker daemon for macOS"
   homepage "https://github.com/ukontainer/dockerd-darwin"
-  url "https://github.com/ukontainer/dockerd-darwin.git", :branch => HOMEBREW_DOCKERD_BRANCH
+  url "https://github.com/ukontainer/dockerd-darwin.git", branch: HOMEBREW_DOCKERD_BRANCH
   version "#{HOMEBREW_DOCKERD_BRANCH}-#{HOMEBREW_DOCKERD_VERSION}"
-  head "https://github.com/ukontainer/dockerd-darwin.git", :branch => HOMEBREW_DOCKERD_BRANCH
+  head "https://github.com/ukontainer/dockerd-darwin.git", branch: HOMEBREW_DOCKERD_BRANCH
 
   depends_on "go" => :build
   depends_on "ukontainer/lkl/containerd"

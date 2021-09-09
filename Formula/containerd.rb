@@ -1,28 +1,22 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 HOMEBREW_CTRD_REVISION="99987f2a5eae653c36a78f5258fd5369766cebcf".freeze
 HOMEBREW_CTRD_VERSION="beta2".freeze
 
 class Containerd < Formula
   desc "Container daemon for macOS"
   homepage "https://github.com/containerd/containerd"
-  url "https://github.com/containerd/containerd.git", :revision => HOMEBREW_CTRD_REVISION
-  version "#{HOMEBREW_CTRD_VERSION}"
-  sha256 ""
+  url "https://github.com/containerd/containerd.git", revision: HOMEBREW_CTRD_REVISION
+  version HOMEBREW_CTRD_VERSION
+  # sha256 ""
   license ""
 
   depends_on "go" => :build
 
   patch do
-    url "https://patch-diff.githubusercontent.com/raw/containerd/containerd/pull/5935.diff"
-    sha256 "b8a200b40c8a1f9dbd21a500b675ab988aaff131b359425c2d319ec331c2db6f"
+    url "https://github.com/containerd/containerd/commit/0c3484d793b31f0030d1c2426fc16cb14b9e9b00.patch?full_index=1"
+    sha256 "8112375f80e2679f6a2fb0d2df13f98a5e736663a8e15348b4ca4523e373e0ea"
   end
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
-    # Remove unrecognized options if warned by configure
-    # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
     system "make"
     bin.install "bin/containerd"
     bin.install "bin/ctr"

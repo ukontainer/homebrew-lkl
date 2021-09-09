@@ -10,6 +10,7 @@ class Nerdctl < Formula
   license ""
 
   depends_on "go" => :build
+  depends_on "ukontainer/lkl/containerd"
 
   def install
     system "make"

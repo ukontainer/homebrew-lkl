@@ -15,7 +15,7 @@ class DockerdDarwin < Formula
     ENV["GOPATH"] = buildpath
     mkdir_p buildpath/"src/github.com/docker/"
     ln_sf buildpath, buildpath/"src/github.com/docker/docker"
-    system "cd src/github.com/docker/docker && make -f Makefile.darwin"
+    system "cd src/github.com/docker/docker && GO111MODULE=off make -f Makefile.darwin"
     bin.install "src/github.com/docker/docker/bundles/dynbinary-daemon/dockerd"
     bin.install "src/github.com/docker/docker/bundles/dynbinary-daemon/dockerd-dev"
   end

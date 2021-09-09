@@ -16,6 +16,11 @@ class Containerd < Formula
     sha256 "8112375f80e2679f6a2fb0d2df13f98a5e736663a8e15348b4ca4523e373e0ea"
   end
 
+  patch do
+    url "https://github.com/ukontainer/containerd/commit/e1bb3c72ece7c15c3ffbc28978475e23fd516041.patch?full_index=1"
+    sha256 "6e0827d28cbf6417798b6969d1e0e622098d36837f9632b2bbad20d87c46e2ee"
+  end
+
   def install
     system "make"
     bin.install "bin/containerd"

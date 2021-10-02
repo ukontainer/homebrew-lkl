@@ -1,5 +1,5 @@
-HOMEBREW_CTRD_REVISION="99987f2a5eae653c36a78f5258fd5369766cebcf".freeze
-HOMEBREW_CTRD_VERSION="beta2".freeze
+HOMEBREW_CTRD_REVISION="64291df71bff72e852188d17e5dad9f3c2c36024".freeze
+HOMEBREW_CTRD_VERSION="beta3".freeze
 
 class Containerd < Formula
   desc "Container daemon for macOS"
@@ -11,14 +11,15 @@ class Containerd < Formula
 
   depends_on "go" => :build
 
+  # darwin mount call
   patch do
-    url "https://github.com/containerd/containerd/commit/0c3484d793b31f0030d1c2426fc16cb14b9e9b00.patch?full_index=1"
-    sha256 "8112375f80e2679f6a2fb0d2df13f98a5e736663a8e15348b4ca4523e373e0ea"
+    url "https://github.com/ukontainer/containerd/commit/85050fad37c680a53dc928e0cf65de323e60599c.patch?full_index=1"
+    sha256 "07a937662b5bbaa595298b506a1739d32e7d778a05408a16945142f2f6513518"
   end
-
+  # darwin snapshotter
   patch do
-    url "https://github.com/ukontainer/containerd/commit/e1bb3c72ece7c15c3ffbc28978475e23fd516041.patch?full_index=1"
-    sha256 "6e0827d28cbf6417798b6969d1e0e622098d36837f9632b2bbad20d87c46e2ee"
+    url "https://github.com/ukontainer/containerd/commit/1d64f827979b8916b193940a11955d12d12b870f.patch?full_index=1"
+    sha256 "b41406b3febaab39a7b1998f34f7f92692f0d27f585a100121bb673023008f2b"
   end
 
   def install

@@ -13,13 +13,13 @@ class Containerd < Formula
 
   # darwin mount call
   patch do
-    url "https://github.com/ukontainer/containerd/commit/85050fad37c680a53dc928e0cf65de323e60599c.patch?full_index=1"
-    sha256 "07a937662b5bbaa595298b506a1739d32e7d778a05408a16945142f2f6513518"
+    url "https://github.com/ukontainer/containerd/commit/66c674690fc0dbfc01d7cd72ad9479877fe2e0a5.patch?full_index=1"
+    sha256 "b05ba6eafa0cd5ff090bd593d55193a746f61624e4f4119f44ce849592c5d302"
   end
   # darwin snapshotter
   patch do
-    url "https://github.com/ukontainer/containerd/commit/1d64f827979b8916b193940a11955d12d12b870f.patch?full_index=1"
-    sha256 "b41406b3febaab39a7b1998f34f7f92692f0d27f585a100121bb673023008f2b"
+    url "https://github.com/ukontainer/containerd/commit/9fa4d24e5a69f4bbee0578d5b0a390f39d3d85de.patch?full_index=1"
+    sha256 "74337b300f23de336faaefc65f300b9d79cfbb524359cac68fa94252e5e8f830"
   end
 
   def install

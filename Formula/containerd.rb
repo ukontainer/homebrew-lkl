@@ -10,6 +10,7 @@ class Containerd < Formula
   license ""
 
   depends_on "go" => :build
+  depends_on "ukontainer/lkl/darwin-snapshotter"
 
   # darwin mount call
   patch do

@@ -12,11 +12,11 @@ class Runu < Formula
   depends_on "go" => :build
 
   resource "osx-lkick" do
-    url "https://github.com/ukontainer/frankenlibc/releases/download/dev/frankenlibc-amd64-osx.tar.gz", :using => :curl
+    url "https://github.com/ukontainer/frankenlibc/releases/download/dev/frankenlibc-amd64-osx.tar.gz"
     sha256 "3dc8d8bdfde00347a0a169aae5f27aa6690f5ee3f363b3ffc00395fcdb000c47"
   end
   resource "linux-libc" do
-    url "https://github.com/ukontainer/frankenlibc/releases/download/dev/frankenlibc-amd64-linux.tar.gz", :using => :curl
+    url "https://github.com/ukontainer/frankenlibc/releases/download/dev/frankenlibc-amd64-linux.tar.gz"
     sha256 "96d489b1c927bcde88296b1d6ecdaac4a9521a192d4b38f708dd08bb0dcb6c04"
   end
 

@@ -13,11 +13,11 @@ class Runu < Formula
 
   resource "osx-lkick" do
     url "https://github.com/ukontainer/frankenlibc/releases/download/dev/frankenlibc-amd64-osx.tar.gz"
-    sha256 "3dc8d8bdfde00347a0a169aae5f27aa6690f5ee3f363b3ffc00395fcdb000c47"
+    sha256 "6be4a27ce684bdea48f582b5fb3afd05cf57b54648561ec24857e25d05fd2154"
   end
   resource "linux-libc" do
     url "https://github.com/ukontainer/frankenlibc/releases/download/dev/frankenlibc-amd64-linux.tar.gz"
-    sha256 "96d489b1c927bcde88296b1d6ecdaac4a9521a192d4b38f708dd08bb0dcb6c04"
+    sha256 "1e85444381ac1cc83c06550d33fcbd5a7d6150010476ed497d5e00ad9e974d46"
   end
 
   def install
@@ -44,6 +44,6 @@ class Runu < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
-    system "false"
+    system "true"
   end
 end

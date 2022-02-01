@@ -9,6 +9,12 @@ class Containerd < Formula
   # sha256 ""
   license ""
 
+  bottle do
+    root_url "https://github.com/ukontainer/homebrew-lkl/releases/download/containerd-beta4"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, big_sur: "e352e30729852994f6c12b747241b53ce731da88dac2eaf01773af746a6eb5ee"
+  end
+
   depends_on "go" => :build
   depends_on "ukontainer/lkl/darwin-snapshotter"
 

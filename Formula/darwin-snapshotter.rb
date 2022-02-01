@@ -1,11 +1,9 @@
-HOMEBREW_REVISION="01a94b59181f5ad90657f9ae80dfce0da4581be7".freeze
-HOMEBREW_VERSION="v1.0".freeze
+HOMEBREW_VERSION="1.0".freeze
 
 class DarwinSnapshotter < Formula
   desc "Snapshotter plugin for conatined/macOS"
   homepage "https://github.com/ukontainer/darwin-snapshotter"
-  url "https://github.com/ukontainer/darwin-snapshotter.git", revision: HOMEBREW_REVISION
-  version HOMEBREW_VERSION
+  url "https://github.com/ukontainer/darwin-snapshotter.git", tag: "v#{HOMEBREW_VERSION}"
   # sha256 ""
   license ""
 

@@ -1,11 +1,9 @@
-HOMEBREW_RUNU_REVISION="feature-v2-shim".freeze
-HOMEBREW_RUNU_VERSION="beta1".freeze
+HOMEBREW_RUNU_VERSION="0.9.4".freeze
 
 class Runu < Formula
   desc "OCI runtime for frankenlibc unikernel"
   homepage "https://github.com/ukontainer/runu"
-  url "https://github.com/ukontainer/runu.git", branch: HOMEBREW_RUNU_REVISION
-  version HOMEBREW_RUNU_VERSION
+  url "https://github.com/ukontainer/runu.git", tag: "v#{HOMEBREW_RUNU_VERSION}"
   # sha256 ""
   license ""
 

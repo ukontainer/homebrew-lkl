@@ -9,6 +9,12 @@ class Nerdctl < Formula
   # sha256 ""
   license ""
 
+  bottle do
+    root_url "https://github.com/ukontainer/homebrew-lkl/releases/download/nerdctl-beta2"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, big_sur: "f5bfbf27dd089cf75c4707bd87a70c08fc880d3450a8963a2643ab3965e7f58b"
+  end
+
   depends_on "go" => :build
   depends_on "ukontainer/lkl/containerd"
 

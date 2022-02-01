@@ -8,9 +8,8 @@ class Runu < Formula
   license ""
 
   bottle do
-    root_url "https://github.com/ukontainer/homebrew-lkl/releases/download/runu-beta1"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, big_sur: "f6f325217f1d3f0332953e36daa4d52dfc139e730fce8629b3efb7d6f6026ae0"
+    root_url "https://github.com/ukontainer/homebrew-lkl/releases/download/runu-0.9.4"
+    sha256 cellar: :any_skip_relocation, big_sur: "f13b155afb99f9c2e2aeacb0b8a595ee51328f7df1a0afbabe861524f7c2ba96"
   end
 
   depends_on "go" => :build

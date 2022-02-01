@@ -9,6 +9,12 @@ class DarwinSnapshotter < Formula
   # sha256 ""
   license ""
 
+  bottle do
+    root_url "https://github.com/ukontainer/homebrew-lkl/releases/download/darwin-snapshotter-v1.0"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, big_sur: "662a0507bc40927b14e8d02209d3425bd0f67e8a14e4d9df6b243fa8c4c2430b"
+  end
+
   depends_on "go" => :build
 
   def install

@@ -9,6 +9,12 @@ class Runu < Formula
   # sha256 ""
   license ""
 
+  bottle do
+    root_url "https://github.com/ukontainer/homebrew-lkl/releases/download/runu-beta1"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, big_sur: "f6f325217f1d3f0332953e36daa4d52dfc139e730fce8629b3efb7d6f6026ae0"
+  end
+
   depends_on "go" => :build
 
   resource "osx-lkick" do

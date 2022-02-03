@@ -5,7 +5,7 @@ class DarwinSnapshotter < Formula
   homepage "https://github.com/ukontainer/darwin-snapshotter"
   url "https://github.com/ukontainer/darwin-snapshotter.git", tag: "v#{HOMEBREW_VERSION}"
   # sha256 ""
-  license ""
+  license "Apache-2.0"
 
   bottle do
     root_url "https://github.com/ukontainer/homebrew-lkl/releases/download/darwin-snapshotter-1.0"

@@ -11,8 +11,9 @@ class Nerdctl < Formula
 
   bottle do
     root_url "https://github.com/ukontainer/homebrew-lkl/releases/download/nerdctl-beta2"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, big_sur: "f5bfbf27dd089cf75c4707bd87a70c08fc880d3450a8963a2643ab3965e7f58b"
+    rebuild 2
+    sha256 cellar: :any_skip_relocation, big_sur:  "f6075c0e1c06b8f119e51ca3ae47cdd721f632a122066635165fd0b6068c75bb"
+    sha256 cellar: :any_skip_relocation, catalina: "eb37bf2efb00252d254cdb7b1129bb5972386b5979c7366d6844a5822d458f44"
   end
 
   depends_on "go" => :build

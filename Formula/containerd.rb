@@ -10,9 +10,9 @@ class Containerd < Formula
   license ""
 
   bottle do
-    root_url "https://github.com/ukontainer/homebrew-lkl/releases/download/containerd-beta4"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, big_sur: "e352e30729852994f6c12b747241b53ce731da88dac2eaf01773af746a6eb5ee"
+    root_url "https://github.com/ukontainer/homebrew-lkl/releases/download/containerd-beta5"
+    sha256 cellar: :any_skip_relocation, big_sur:  "92579b9ed36b9c1d8aaa88d298cc151066849b6918adcc02996457b7615279ab"
+    sha256 cellar: :any_skip_relocation, catalina: "536ced30e8c0b396fceb2b5f8b9922f9487467386b17f687aadfdf46b66724f5"
   end
 
   depends_on "go" => :build

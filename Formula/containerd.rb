@@ -1,5 +1,5 @@
 HOMEBREW_CTRD_REVISION="60703af9fdf113eb41520df7f5f17e5e831a83c1".freeze
-HOMEBREW_CTRD_VERSION="beta4".freeze
+HOMEBREW_CTRD_VERSION="beta5".freeze
 
 class Containerd < Formula
   desc "Container daemon for macOS"

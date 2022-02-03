@@ -7,7 +7,7 @@ class Nerdctl < Formula
   url "https://github.com/ukontainer/nerdctl.git", branch: HOMEBREW_CTRD_REVISION
   version HOMEBREW_CTRD_VERSION
   # sha256 ""
-  license ""
+  license "Apache-2.0"
 
   bottle do
     root_url "https://github.com/ukontainer/homebrew-lkl/releases/download/nerdctl-beta2"

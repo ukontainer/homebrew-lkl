@@ -5,7 +5,7 @@ class Runu < Formula
   homepage "https://github.com/ukontainer/runu"
   url "https://github.com/ukontainer/runu.git", tag: "v#{HOMEBREW_RUNU_VERSION}"
   # sha256 ""
-  license ""
+  license "Apache-2.0"
 
   bottle do
     root_url "https://github.com/ukontainer/homebrew-lkl/releases/download/runu-0.9.4"
